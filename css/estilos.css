@@ -1,0 +1,383 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
+body {
+    background:  #02010a;
+    font-family: 'Dancing Script';
+}
+
+/* Mas de 900 px Dispositivos Grandes */
+.contenido {
+ /*MARGEN CENTRADO*/
+
+
+width:900px;
+margin: 0 auto;
+font-family:"Dancing Script";
+}
+
+
+
+@-webkit-keyframes slidein  {
+
+
+    0% {
+            margin-top: 150%;
+    }
+
+    60% {
+
+        margin-top: -5%;
+    }
+
+    100% {
+
+        margin-top: 0%;
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+#cabecera{
+            
+    background-color: #5b7989;
+    border-radius: 10px  10px 0px 0px;
+    height:40px;
+    display: flex;
+    font-family: "Dancing Script";
+    animation: slidein 2s;
+   
+
+}
+
+#Seccion-imagen-central{
+    background-color: #82c3a6;    
+    display: block;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 30px;  
+}
+
+#titulo {
+
+    float: left;
+    color:white;
+    box-shadow: 2px #02010a;
+    display:flex;
+    flex-flow:row wrap;
+    width: 70%;
+    margin: 10 10 10 10;
+    text-shadow: 2px #02010a;
+ 
+    
+}
+
+#menu {
+    width: 30%;
+    margin: 10 10 10 10;
+
+    
+
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10;
+}
+
+ .Seccion-Imagen-Secundaria{
+
+    background-color: #d5c75f;
+    border : 1px solid; 
+    display: flex;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    
+ }
+
+#Imagen-Superior-Izquierdo{
+
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+   
+
+}
+
+#enlace-Imagen-Superior-Izquierdo a {
+
+color: black;
+text-decoration:underline;
+
+
+}
+
+
+#enlace-Imagen-Superior-Derecho a{
+
+    
+color: black;
+text-decoration:underline;
+
+}
+
+
+
+#Imagen-Superior-Derecho{
+    flex-flow:row wrap;
+    height: 100%;
+    width: 100%;
+   
+}   
+
+#Imagen-Superior-Izquierdo img {
+
+    border: 1px;
+    
+}
+
+#Imagen-Superior-Izquierdo img:hover {
+
+    transform: rotate(10deg);
+    /*Sombra */
+    box-shadow: 2px 2px 2px  #82c3a6;
+}
+
+
+#Imagen-Superior-Derecho img:hover{
+
+transition: all 1s ;
+transition: translate(20px,-5px);
+-webkit-transform: translate(20px,-5px);
+-webkit-animation-direction: reverse;
+animation-direction: reverse;
+box-shadow: 2px 2px 2px #82c3a6;
+
+
+
+
+}
+
+#Pie-de-Pagina{
+
+    background: #C6d5c5;
+    display: flex;
+    border-radius: 0px  0px 10px 10px;
+    text-align: center;
+}
+
+#Contacto{
+    flex-basis:0;
+    flex-grow: 1;
+    padding-left:5%;
+}
+
+#Terminos{
+    flex-basis:0;
+    flex-grow: 1;
+    padding-left:5%;
+}
+
+#Redes-Sociales{
+
+    flex-basis:0;
+    flex-grow: 1;
+    padding-left:5%;
+   
+}
+
+
+
+#Derechos{
+
+    
+    flex-basis:0;
+    flex-grow: 1;
+    padding-left:5%;
+}
+
+
+#Contacto p {
+    text-align: left;
+
+}
+
+
+#Terminos p {
+    text-align: left;
+}
+
+
+#Redes-Sociales p {
+    text-align: left;
+}
+
+#Derechos p {
+    text-align: left;
+}
+
+
+#Galeria {
+
+
+ background-color: #d5c75f;
+ text-align: center;
+
+
+}
+
+#Imagenes-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+#Imagenes-1  img {
+    margin: 0 auto;
+    
+}
+
+#i1{
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+}
+
+
+#i2 , #i4 , #i6 {
+
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+
+}
+
+#i3 {
+
+    -webkit-filter:sepia(90%);
+    filter:sepia(90%);
+}
+ 
+#Imagenes-2 {
+    display: flex;
+    flex-direction: row;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+
+#Imagenes-2  img {
+    margin: 0 auto;
+}
+
+
+
+
+
+/*Efectos */ 
+
+
+/* Menos de 900 px Dispositivos Celulares */
+@media (max-width:900px) {
+
+
+    .contenido {
+  
+        width: 100%;
+
+        
+
+    }
+
+    #titulo {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #cabecera {
+    
+       
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+    }
+   
+
+
+    #menu {
+
+        padding-top: 10px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+
+
+    
+#Seccion-imagen-central{
+
+    width: 100%;
+    height:80px;
+
+}
+#Seccion-imagen-central img {
+
+width: 80%;
+height: 80%;
+}
+
+
+.Seccion-Imagen-Secundaria {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+#Imagenes-1 {
+    display: flex;
+    flex-direction: column;
+
+    padding-top:20px;
+    
+}
+
+
+#Imagenes-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Pie-de-Pagina{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#i1 , #i2 , #i3, #i4 , #i5, #i5 {
+    width: 80%;
+}
+
+
+
+
+
+}
